@@ -18,6 +18,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+@media (max-width: 767px) {
+    body {
+        background-image: url(images/bg-pattern-top-mobile.svg),url(images/bg-pattern-bottom-mobile.svg);
+    }
+}
+@media (min-width: 768px) {
+    body {
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    }
 }
 main {
     padding: 50px 20px;
